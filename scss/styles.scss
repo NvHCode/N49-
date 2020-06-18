@@ -1,0 +1,108 @@
+// FONT FACE DECLARATIONS
+@font-face {
+	font-family: 'moriston_light';
+	src: url("../web-fonts/MoristonPersonal-Light.woff2") format("woff2"), url("web-fonts/MoristonPersonal-Light.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'moriston_regular';
+	src: url("../web-fonts/MoristonPersonal-Regular.woff2") format("woff2"), url("web-fonts/MoristonPersonal-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'moriston_medium';
+	src: url("../web-fonts/MoristonPersonal-Medium.woff2") format("woff2"), url("web-fonts/MoristonPersonal-Medium.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'moriston_black';
+	src: url("../web-fonts/MoristonPersonal-Black.woff2") format("woff2"), url("web-fonts/MoristonPersonal-Black.woff") format("woff");
+	font-weight: normal;
+	font-style: normal; 
+}
+
+// SASS VARIABLES
+$clr-bg:black;
+$clr-txt:#f3f3f3;
+
+// Earthtone Colors
+$och:#cc7722;
+$brown-och:#9f7b3e;
+$burnt-och:#bb4f35;
+$golden-och:#c77943;
+$green-och:#9f8f55;
+$heavy-och:#9b753d;
+$maroon-och:#cc7733;
+$yellow-och:#efcc83;
+$dark-yellow-och:#cb9d06;
+$olive-och:#837752;
+$orange-och:#dc793a;
+$red-och:#913832;
+
+
+// BASE STYLES
+body {
+	background-color: $red-och;
+	color:$clr-txt;
+	font-family: 'moriston_regular', sans-serif;
+	font-size:16px;
+	max-width: 78.125%;
+	margin:0 auto;
+	@media all and (min-width: 768px) {
+	max-width: 96%;
+  }
+  @media all and (min-width: 1000px) {
+	max-width: 85%;
+  }
+  @media all and (min-width: 1100px) {
+	max-width: 75%
+  }
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 3.2rem;
+	color:$yellow-och;
+	font-family: 'moriston_black', sans-serif;
+	@media all and (min-width: 768px) {
+	font-size: 2rem;
+  }
+  @media all and (min-width: 999px) {
+	font-size: 3.2rem;
+  }
+}
+img {
+	max-width: 100%;
+}
+img.featured {
+	max-height: auto;
+	width:100%;
+	margin-bottom:10px;
+	@media all and (min-width: 768px) {
+		max-width: 45%;
+		float:left;
+		margin-right:20px;
+	}
+	@media all and (min-width: 923px) {
+	max-width: 450px;
+  }
+}
+p {
+	font-size: 100%;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+p.wrap-inline {
+	max-width: 100%;
+	@media all and (min-width: 1053px) {
+	max-width: 500px;
+  }
+	@media all and (min-width: 768px) {
+		overflow:hidden;
+	}
+}
